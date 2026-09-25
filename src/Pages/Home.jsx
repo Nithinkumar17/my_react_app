@@ -108,7 +108,7 @@ function Home() {
         <div className="home-page">
 
             <h1>
-                IPL Team Management
+                IPL Teams
             </h1>
 
 
