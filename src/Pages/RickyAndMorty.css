@@ -1,0 +1,176 @@
+.rick-page {
+    padding: 30px;
+}
+
+.rick-page h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.character-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(280px, 1fr)
+    );
+    gap: 25px;
+}
+
+.character-card {
+    display: flex;
+    flex-direction: column;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    background: white;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.character-card img {
+    width: 100%;
+    height: 280px;
+
+    object-fit: cover;
+}
+
+.character-details {
+    padding: 18px;
+}
+
+.character-details h2 {
+    margin-top: 0;
+}
+
+.character-details p {
+    margin: 8px 0;
+}
+
+
+/* ========================= */
+/* Pagination */
+/* ========================= */
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    margin-top: 35px;
+    margin-bottom: 30px;
+
+    flex-wrap: wrap;
+}
+
+.pagination button {
+    min-width: 42px;
+    height: 40px;
+
+    padding: 8px 14px;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+
+    background: white;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+    background: #f0f0f0;
+}
+
+.pagination button.active {
+    background: #333;
+    color: white;
+
+    border-color: #333;
+}
+
+.pagination button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.pagination span {
+    padding: 8px 5px;
+    font-weight: bold;
+    color: #777;
+}
+
+/* ========================= */
+/* Character Summary */
+/* ========================= */
+
+.character-summary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+    margin-bottom: 30px;
+}
+
+.character-summary > div {
+    background: white;
+
+    border: 1px solid #ddd;
+    border-radius: 12px;
+
+    padding: 20px;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.character-summary > div:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.12);
+}
+
+.character-summary strong {
+    display: block;
+
+    font-size: 15px;
+
+    color: #666;
+
+    margin-bottom: 5px;
+}
+
+.character-summary span {
+    display: block;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+    color: #222;
+}
+
+
+/* Responsive */
+
+@media (max-width: 700px) {
+
+    .character-summary {
+        grid-template-columns: 1fr;
+    }
+
+}

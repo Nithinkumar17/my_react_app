@@ -1,0 +1,151 @@
+/* ================================
+   HOME PAGE
+================================ */
+
+.home-page {
+  padding: 30px;
+}
+
+
+.home-page h1 {
+  margin-top: 0;
+
+  margin-bottom: 25px;
+
+  color: #171717;
+
+  font-size: 32px;
+}
+
+
+/* ================================
+   TEAM FORM
+================================ */
+
+.team-form {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 25px;
+}
+
+
+.team-form input {
+  height: 40px;
+
+  padding: 8px 12px;
+
+  border: 1px solid #bbb;
+
+  border-radius: 5px;
+
+  font-size: 14px;
+}
+
+
+.team-form button {
+  height: 40px;
+
+  padding: 0 18px;
+
+  border: none;
+
+  border-radius: 5px;
+
+  background: #7e22ce;
+
+  color: white;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+
+.team-form button:hover {
+  background: #6b21a8;
+}
+
+
+/* ================================
+   TEAM CONTAINER
+================================ */
+
+.team-container {
+  display: grid;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(350px, 1fr)
+  );
+
+  gap: 20px;
+}
+
+
+/* ================================
+   TEAM CARD
+================================ */
+
+.team-card {
+
+  background: white;
+
+  padding: 28px;
+
+  border-radius: 18px;
+
+  border-top: 6px solid #8e24aa;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+  min-height: 280px;
+
+  transition: 0.3s;
+}
+
+
+.team-card:hover {
+  transform: translateY(-4px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.team-card h2 {
+  margin-top: 0;
+
+  margin-bottom: 25px;
+
+  font-size: 25px;
+}
+
+
+.team-card p {
+  font-size: 16px;
+
+  margin: 15px 0;
+}
+
+
+.team-card button {
+  margin-top: 10px;
+
+  padding: 8px 15px;
+
+  border: 1px solid #999;
+
+  border-radius: 5px;
+
+  background: white;
+
+  cursor: pointer;
+}
+
+
+.team-card button:hover {
+  background: #f3f3f3;
+}

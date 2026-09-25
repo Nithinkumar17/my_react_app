@@ -1,0 +1,66 @@
+.team-details {
+    width: 500px;
+    margin: 60px auto;
+    padding: 35px 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.team-details h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 32px;
+    color: #222;
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 15px;
+}
+
+.team-details p {
+    margin: 18px 0;
+    padding: 12px 15px;
+    background: #f7f7f7;
+    border-radius: 6px;
+    font-size: 16px;
+    color: #444;
+}
+
+.team-details strong {
+    color: #222;
+}
+
+.team-details a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 11px 20px;
+    background: #222;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.team-details a:hover {
+    background: #444;
+    transform: translateY(-1px);
+}
+
+/* Team Not Found */
+
+.team-details + div {
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .team-details {
+        width: 85%;
+        margin: 30px auto;
+        padding: 25px;
+    }
+
+    .team-details h1 {
+        font-size: 26px;
+    }
+}

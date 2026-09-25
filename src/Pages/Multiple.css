@@ -1,0 +1,117 @@
+.multiple-page {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.multiple-page h1 {
+    text-align: center;
+    margin-bottom: 35px;
+    color: #222;
+}
+
+.multiple-team-card {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.card-header h2 {
+    margin: 0;
+    color: #333;
+}
+
+.multiple-team-card input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 15px;
+    outline: none;
+}
+
+.multiple-team-card input:focus {
+    border-color: #555;
+}
+
+.remove-button {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 5px;
+    background: #e74c3c;
+    color: white;
+    cursor: pointer;
+}
+
+.remove-button:hover {
+    background: #c0392b;
+}
+
+.multiple-actions {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.add-team-button,
+.save-all-button {
+    padding: 13px 22px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.add-team-button {
+    background: #555;
+}
+
+.add-team-button:hover {
+    background: #333;
+}
+
+.save-all-button {
+    background: #222;
+}
+
+.save-all-button:hover {
+    background: #000;
+}
+
+.multiple-message {
+    text-align: center;
+    margin-top: 25px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+@media (max-width: 600px) {
+
+    .multiple-page {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .multiple-actions {
+        flex-direction: column;
+    }
+
+    .add-team-button,
+    .save-all-button {
+        width: 100%;
+    }
+}
